@@ -3,13 +3,34 @@ const http = require("http");
 const htmlContent = `
   <html>
     <head>
-      <title>Welcome</title>
+      <meta charset="UTF-8">
+      <title>Evangadi AWS Launch 🚀</title>
+      <style>
+        body {
+          background: linear-gradient(135deg, #e0f2fe, #f0fdf4);
+          font-family: 'Segoe UI', sans-serif;
+          text-align: center;
+          padding: 50px;
+        }
+        h1 { color: #2563eb; font-size: 2.8em; margin-bottom: 10px; }
+        .typing {
+          font-size: 1.2em;
+          width: 26ch;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 2px solid #10b981;
+          animation: typing 3s steps(26), blink .5s step-end infinite alternate;
+        }
+        @keyframes typing { from { width: 0 } to { width: 26ch } }
+        @keyframes blink { 50% { border-color: transparent } }
+        .note { margin-top: 30px; font-size: 14px; color: #6b7280; }
+      </style>
     </head>
-    <body style="text-align: center; background-color: #f0f8ff; color: #333;">
-      <h1 style="color: #007bff; font-family: Arial, sans-serif; margin-top: 50px;">
-        🚀 Welcome to AWS | Evangadi April Batch Students 🎉
-      </h1>
-      <p style="font-size: 18px;">You're now running your app in a Docker container on EC2!</p>
+    <body>
+      <h1>🌟 Welcome to the Future, Team Evangadi! 🌟</h1>
+      <div class="typing">Dockerized. Deployed. Delivered.</div>
+      <p>🚀 Live on AWS EC2 — built with ❤️ by Mubarek Bora</p>
+      <p class="note">April Batch | Instructors: ZED & ISRISH | Evangadi Proud 🎓</p>
     </body>
   </html>
 `;
